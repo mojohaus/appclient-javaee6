@@ -52,6 +52,13 @@
                 <artifactId>maven-acr-plugin</artifactId>
                 <version>1.0</version>
                 <extensions>true</extensions>
+                <configuration>
+                    <archive>
+                        <manifest>                            
+                            <mainClass>${package}.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
